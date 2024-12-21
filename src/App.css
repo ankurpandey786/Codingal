@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+  background-color: #007bff;
+  color: white;
+  flex-wrap: wrap; 
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-bottom: 1rem; 
+}
+
+.navbar-logo {
+  height: 30px;
+  width: auto;
+  margin-right: 1rem;
+}
+
+.lesson-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  flex-grow: 1;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.timer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-right: 1rem;
+}
+
+.end-class-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.end-class-btn:hover {
+  background-color: #cc0000;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f1f1f1;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.post-item {
+  background-color: white;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .navbar-left {
+    justify-content: center;
+  }
+
+  .navbar-logo {
+    margin-bottom: 0.5rem;
+    height: 25px;
+  }
+
+  .lesson-title {
+    font-size: 1.1rem;
+  }
+
+  .navbar-right {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .timer {
+    font-size: 1.3rem;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .end-class-btn {
+    margin-left: auto;
+    margin-top: 1rem;
+  }
+
+  .post-item {
+    width: 95%;
+  }
+}
